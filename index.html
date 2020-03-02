@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Tugas Logika 3: Programmer IT
+    </h1>
+    <input type="text" name="" id="" class="input">
+    <button type="button" onclick="checker()">Tampilkan hasil</button>
+
+    <script>
+        
+        function checker(){
+            var dict =  ['pro', 'gram', 'merit', 'program', 'it', 'programmer'];
+            var input = $(".input").val();
+            var output = [];
+            for(var i=0; i < dict.length; i++){
+                var checkDict = input.includes(dict[i]);
+                if(checkDict == true){
+                    output.push(dict[i]);
+                }
+                
+            }
+            alert(output);
+
+        }
+    </script>
+</body>
+</html>
